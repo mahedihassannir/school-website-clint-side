@@ -3,7 +3,19 @@ import {
 
 } from "react-router-dom";
 
+// here is teh all import of the routes 
+
 import Main from "../Layout/Main";
+import Home from "../Pages/Home";
+import About from "../Pages/About";
+import Contact from "../Pages/Contact";
+import Courses from "../Pages/Courses";
+import Library from "../Pages/Library";
+import OurTeachers from "../Pages/OurTeachers";
+import StudentFromForALLClass from "../Pages/StudentFromForALLClass";
+import Login from "../Logins/Login";
+import Register from "../Logins/Register";
+import DashBord from "../DashBord/DashBord";
 
 
 const router = createBrowserRouter([
@@ -13,44 +25,44 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <></>
+                element: <Home></Home>
             },
 
             {
-                path: "/",
-                element: <></>
+                path: "About",
+                element: <About></About>
             },
             {
-                path: "/",
-                element: <></>
+                path: "Contact",
+                element: <Contact></Contact>
             },
             {
-                path: "/",
-                element: <></>
+                path: "Courses",
+                element: <Courses></Courses>
             },
             {
-                path: "/",
-                element: <></>
+                path: "Library",
+                element: <Library></Library>
             },
             {
-                path: "/",
-                element: <></>
+                path: "OurTeachers",
+                element: <OurTeachers></OurTeachers>
             },
             {
-                path: "/",
-                element: <></>
+                path: "StudentFrom",
+                element: <StudentFromForALLClass></StudentFromForALLClass>
             },
             {
-                path: "/",
-                element: <></>
+                path: "Login",
+                element: <Login></Login>
             },
             {
-                path: "/",
-                element: <></>
+                path: "Register",
+                element: <Register></Register>
             },
             {
-                path: "/",
-                element: <></>
+                path: "DashBoard",
+                element: <DashBord></DashBord>
             },
 
         ]
